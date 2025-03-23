@@ -1,0 +1,40 @@
+    1  wtc-lms
+    2  wtc-lms login
+    3  git --version
+    4  git config --global user.name "pmatsane023"
+    5  git config --global user.email pmatsane023@student.wethinkcode.co.za
+    6  wtc-lms -V
+    7  cd ~/Downloads
+    8  bash where_can_install_wtc_lms.sh
+    9  which $SHELL
+   10  echo "export PATH=\"\$HOME/.local/bin\:\$PATH\"" >> ~/.bashrc
+   11  wtc-lms
+   12  bash where_can_install_wtc_lms.sh
+   13  if [ -z "$(command -v wtc-lms &> /dev/null)" ]; then     echo "wtc-lms is already installed: `which wtc-lms`";     echo "Please replace this binary with the new one";     echo "";     echo ""; fi;
+   14  case ":$PATH:" in     *:$HOME/.local/bin:*)         echo "You can copy the wtc-lms client to $HOME/.local/bin";     ;;     *)         echo "You will have to copy the wtc-lms client to ~/.local/bin";         echo "Or else you will have to add $HOME/.local/bin to your path";         echo "This can be done with the following:";         echo "mkdir -p $HOME/.local/bin";         echo "echo \"export PATH=$HOME/.local/bin:\$PATH\" > $HOME/.bashrc";     ;; esac
+   15  which $SHELL
+   16  echo "export PATH=\"\$HOME/.local/bin\:\$PATH\"" >> ~/.bashrc
+   17  touch README.md
+   18  ls -a
+   19  git status
+   20  git log
+   21  nano README.md
+   22  git status
+   23  git add README.md
+   24  git commit -m "fourth commit"
+   25  git log
+   26  git checkout 548c2499dfc1897a7649b9439d9fb08c680c28ba
+   27  cat README.md
+   28  git checkout main
+   29  git checkout -b milkshake-flavours
+   30  git branch
+   31  nano milkshake.md
+   32  git status
+   33  git add milkshake.md
+   34  git commit -m "added initial flavours"
+   35  git log
+   36  git checkout main
+   37  git checkout -b history
+   38  git log
+   39  git branch
+   40  history > history.txt
